@@ -1,0 +1,67 @@
+.e-toolbar .e-toolbar-items {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px; /* Adjust spacing between buttons */
+}
+
+
+/* Adjust toolbar height */
+.e-toolbar {
+  height: 48px; /* Increase toolbar height */
+}
+
+/* General styles for larger toolbar buttons */
+.e-toolbar .e-toolbar-item {
+  background-color: transparent; /* Transparent background */
+  padding: 8px 8px; /* Increase padding for larger buttons */
+  font-size: 16px; /* Increase font size for better readability */
+  opacity: 1; /* Slightly reduce opacity for a cleaner look */
+  transition: opacity 0.2s ease; /* Smooth transition */
+}
+
+/* Toolbar button hover and active (clicked) effects */
+.e-toolbar-item:hover {
+  background-color: rgb(169, 227, 244); /* Dark gray on hover */
+  opacity: 1; /* Ensure full opacity on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.e-toolbar-item:active, /* Active (clicked) state */
+.e-toolbar-item.e-active { /* Class to apply active style */
+  background-color: rgb(98, 192, 224); /* Light blue when clicked */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Ensure the button size remains the same */
+.e-toolbar-item {
+  padding: 8px 8px; /* Keep the padding intact */
+  font-size: 16px; /* Keep font size unchanged */
+  box-sizing: border-box; /* Ensure size is calculated correctly */
+}
+
+
+/* Disabled undo/redo buttons should be more subtle */
+.e-toolbar-item.e-undo, .e-toolbar-item.e-redo,
+.e-toolbar-item.e-overlay.e-undo, .e-toolbar-item.e-overlay.e-redo {
+  opacity: 0.5; /* Lower opacity for disabled buttons */
+}
+
+/* Remove any box-shadow or background from toolbar buttons */
+.e-toolbar .e-toolbar-item .e-btn {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Center the dialog for insert image and insert link */
+.e-dialog {
+  top: 50% !important; /* Center vertically */
+  left: 50% !important; /* Center horizontally */
+  transform: translate(-50%, -50%) !important; /* Adjust for perfect centering */
+  position: fixed !important; /* Ensure it stays in the middle */
+  border: 1px solid rgb(211, 13, 79); /* Optional: Add a colored border */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for focus */
+  padding: 16px; /* Space inside the dialog */
+}
+

@@ -1,0 +1,170 @@
+/* Top Bar Styles */.save-button {
+  padding: 10px 30px; /* Increase padding for width */
+  min-width: 150px; /* Set minimum width */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3;              /* Black text on hover */
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  align-items: center;
+  padding: 20px;
+  background-color: #343a40; /* Dark grey color */
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2px;
+}
+
+.top-bar button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff; /* White button background */
+  color: #007bff; /* Primary color for button text */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Add transition effect */
+  margin: 0 10px; /* Add margin to space out buttons */
+}
+
+.top-bar button:hover {
+  background-color: #e2e6ea; /* Light gray on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.top-bar select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  color: #007bff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.tabs {
+  display: flex;
+  background-color: #e0e0e0;
+  border-bottom: 1px solid #ccc;
+  margin-top: 0px;
+}
+
+.tab {
+  padding: 6px 15px;
+  cursor: pointer;
+  background-color: #c3ceffb1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #007bff;;
+}
+
+.tab.active {
+  background-color: #fff;
+  border-bottom: 1px solid transparent;
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #d9d6d6;
+  border-top: 1px solid #a9a6a6;
+}
+
+.left-buttons {
+  display: flex;
+  margin-left: 75px;
+}
+
+.center-buttons {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.right-buttons {
+  display: flex;
+  margin-right: 75px;
+}
+
+
+.bottom-button {
+  padding: 10px 30px; /* Increase padding for width */
+  min-width: 150px; /* Set minimum width */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bottom-button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-buttons button {
+  margin-left: 10px;
+}
+

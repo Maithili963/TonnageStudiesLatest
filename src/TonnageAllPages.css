@@ -1,0 +1,102 @@
+.right-container {
+  width: 50%; /* Right half of the page */
+  float: left; /* Align the chart to the right side */
+  padding: 20px;
+}
+
+.table-container {
+  width: 50%; /* Make the table container occupy half of the page */
+  float: left; /* Align the table to the left side */
+  padding:50px;
+  margin-left: -10px; /* Optional: Use negative margin if further left alignment is needed */
+}
+
+.data-table td input {
+  width: 100%; /* Ensure the input fields occupy the full width of the cell */
+  text-align: center;
+  padding: 2px;
+  border: none; /* Remove input field borders */
+  background-color: transparent; /* Make the background transparent */
+  outline: none; /* Remove the outline when clicking inside */
+  font-size: 14px; /* Adjust font size */
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.data-table td {
+  background-color: #fff;
+  padding: 0; /* Remove extra padding around the input */
+  font-size: 14px; /* Adjust font size */
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #cecdcd;
+  padding: 2px 4px; /* Slight padding for a clean look */
+  text-align: center;
+  width: 14%;
+  line-height: 1.2;
+}
+
+.data-table th {
+  font-size: 14.5px; /* Adjust font size */
+  font-weight: bold; /* Make heading bold (optional) */
+  padding: 8px 5px; /* Adjust padding to give more space */
+  text-align: center; /* Center align the text */
+  background-color: #f5f5f5; /* Background color for the heading */
+  color: #333; /* Text color */
+  border: 1px solid #cecdcd;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.data-table td input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.data-table td input[type="number"]::-webkit-outer-spin-button,
+.data-table td input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.chart-heading {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.grey-background {
+  background-color: #f2f2f2; /* Light grey color */
+}
+
+.data-table td.grey-background {
+  background-color: #f2f2f2; /* Light grey background for specific columns */
+}
+
+.add-row-btn {
+  margin-top: 70px; /* Adjust the top distance with margin */
+  background-color: #2e5a6c; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 5px 15px; /* Adjust padding for size */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+  position: absolute; /* To position it absolutely within its container */
+  top: 50px; /* Adjust the vertical position */
+  left: 60px; /* Adjust the horizontal position */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  margin-top:90px;
+}
+
+.add-row-btn:hover {
+  background-color: #2368858a; /* Darker green on hover */
+}
+
+
