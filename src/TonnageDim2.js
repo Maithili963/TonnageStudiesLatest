@@ -378,7 +378,7 @@ const handlePaste = (index, field, event) => {
       <div className="right-container">
         <h2 className="chart-heading">Tonnage Dim2</h2>
         <ChartComponent
-          id="charts"
+          id="chart-tonnage-dim2"
           primaryXAxis={{
             title: 'Tonnage',
             valueType: 'Double',
