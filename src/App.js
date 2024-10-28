@@ -20,42 +20,26 @@ function App() {
 const renderContent = () => {
   return (
     <div style={{ overflow: 'auto', maxHeight: '100%' }}>
-      <div
-        style={{
-          display: activeTab === 'TonnageDim2' ? 'block' : 'none',
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        <TonnageDim2 ref={tonnageDim2Ref} />
-      </div>
-      <div
-        style={{
-          display: activeTab === 'TonnageDim1' ? 'block' : 'none',
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        <TonnageDim1 ref={tonnageDim1Ref} />
-      </div>
-      <div
-        style={{
-          display: activeTab === 'TonnageStudyWeight' ? 'block' : 'none',
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        <TonnageStudyWeight ref={tonnageStudyRef} />
-      </div>
-      <div
-        style={{
-          display: activeTab === 'Notes' ? 'block' : 'none',
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        <Notes ref={noteRef} noteText={noteText} setNoteText={setNoteText} />
-      </div>
+      {activeTab === 'TonnageDim2' && (
+        <div style={{ width: '100%', height: '100%' }}>
+          <TonnageDim2 ref={tonnageDim2Ref} />
+        </div>
+      )}
+      {activeTab === 'TonnageDim1' && (
+        <div style={{ width: '100%', height: '100%' }}>
+          <TonnageDim1 ref={tonnageDim1Ref} />
+        </div>
+      )}
+      {activeTab === 'TonnageStudyWeight' && (
+        <div style={{ width: '100%', height: '100%' }}>
+          <TonnageStudyWeight ref={tonnageStudyRef} />
+        </div>
+      )}
+      {activeTab === 'Notes' && (
+        <div style={{ width: '100%', height: '100%' }}>
+          <Notes ref={noteRef} noteText={noteText} setNoteText={setNoteText} />
+        </div>
+      )}
     </div>
   );
 };
