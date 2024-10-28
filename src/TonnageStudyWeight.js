@@ -355,7 +355,7 @@ if (range > 1000) {
       <div className="right-container">
         <h2 className="chart-heading">Tonnage Avg Weight</h2>
         <ChartComponent
-          id="charts"
+          id="chart-tonnage-studyweight"
           primaryXAxis={{
             title: 'Tonnage',
             valueType: 'Double',
